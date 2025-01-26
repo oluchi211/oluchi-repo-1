@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>ADOPT A FAVOURITE ANIMAL</title>
+      <style>
+        
+        body{
+          background-color: burlywood;
+          font-family: 'Times New Roman';
+          justify-content: center;
+          
+        }
+      
+        h1{
+          text-align: center;
+          color: red;
+          margin-bottom: 20px;
+        }
+        label{
+          font-weight: bold;
+          margin-bottom: 5px;
+          color: chocolate;
+        }
+        input[type="text"],select,textarea{
+          font-size: 15px;
+          box-sizing: border-box;
+          text-align: center;
+          margin : 5px;
+          padding: 5px;
+          border: 1px solid white;
+          width: 100%;
+          
+        }
+        button{
+          background-color: white;
+          padding: 10px;
+          font-weight: bold;
+          display: flex;
+          font-size: 20px;
+          width: 10%;
+          color: brown;
+          justify-content: center;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          text-align: right;
+        }
+        button:hover{
+          background-color: whitesmoke;
+        }
+
+        
+
+      </style>
+    </head>
+    <body>
+
+        <h1>Adopt your favourite animal</h1>
+        <form action="/sumbit - form">
+            <div class="name">
+                <label for="username">User name</label>
+                <input type="text" id="username" name="your name" placeholder="Enter your user name" required>
+            </div>
+        </br>
+        <div class="styled - form">
+            <label for="animal">select your favourite animal</label>
+            <select id="animal" name="animmal" required>
+                <option value=""> favourite animal</option>
+                <option value="dog">dog</option>
+                <option value="cat">cat</option>
+                <option  value="rabbit">rabbit</option>
+                <option value="monkey">monkey</option>
+                <option value="bird">bird</option>
+            </select>
+        </br>
+        </div>
+          <div class="form-group">
+            <label for="reasons">state your reasons to adopt an animal</label>
+            <textarea id="reasons"name="your reasons" rows="4"placeholder="state your reasons" required></textarea>
+          </div>
+          <div class="grouped">
+            <button type="submit">submit</button>
+          </div>
+        </form>
+    </body>
+    
